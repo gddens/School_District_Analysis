@@ -1,10 +1,10 @@
 # Analysis of School District Test Scores
-##Overview
+## Overview
 The purpose of this analysis was to aggregate the standardized testing data of all the high schools a city school district in order to aid the school board in decisions about budget allocation. Various metrics were calculated and displayed to show data on overall school performance, as well as average scores by grade, school spending, size, and type. The original analysis later had to be adjusted when it came to light that the ninth grade reading and math test scores for Thomas High School were altered, and therefore had to be replaced with null ("NaN") values.
 
-##Results
+## Results
 
-###District Summary
+### District Summary
 Below is a breakdown of how the district summary changed after the scores for ninth grade reading and math test scores for Thomas High School were replaced with "NaN" values:
 
 * Average math score decreased from 79.0 to 78.9
@@ -26,7 +26,7 @@ Below are the original and updated district summaries, respectively, prior to fo
 ![image](https://user-images.githubusercontent.com/86032451/126625008-cf821d01-4b60-4fae-b145-ea2760b7e3d1.png)
 ![image](https://user-images.githubusercontent.com/86032451/126625047-8965d566-9cc6-4e9d-9813-aea412da47d9.png)
 
-###School Summary
+### School Summary
 Within the updated challenge code there are two school summaries - the first includes the 9th "NaN" test scores within the calculations for Thomas High School, and the second has them removed from just the passing percentages. Below is a breakdown of how this affected Thomas High School within the school summary:
 
 * Average math score was 83.418349 originally, and then 83.350937 in the updated analysis.
@@ -47,7 +47,7 @@ Second updated school summary (removes 9th-grade "NaN" scores in % calculations)
 
 ![image](https://user-images.githubusercontent.com/86032451/126626876-643cbf77-0338-4eb3-87a2-21988116bbb1.png)
 
-###School standing relative to other schools
+### School standing relative to other schools
 * Before replacing the % passing math, reading, and overall, Thomas High School would've been ranked 8th out of the 15 school in terms of overall passing percentage:
 
 ![image](https://user-images.githubusercontent.com/86032451/126629209-15a8eb98-7e62-4e03-bac9-9689b63c5c51.png)
@@ -58,7 +58,7 @@ Second updated school summary (removes 9th-grade "NaN" scores in % calculations)
 
 ![image](https://user-images.githubusercontent.com/86032451/126628472-d3d798c1-225f-415a-9952-e5455380d57b.png)
 
-###Math and Reading Scores by Grade
+### Math and Reading Scores by Grade
 * Within the "math_scores_by_grade" dataframe, the only thing that changed is that the 9th grade score for Thomas High School was updated to "nan" (originally 83.6):
 
 ![image](https://user-images.githubusercontent.com/86032451/126629424-61b513ac-bf89-453c-a767-adc62feefd56.png) ![image](https://user-images.githubusercontent.com/86032451/126629451-6c814f11-f873-48ee-a8b6-91fb74e5c017.png)
@@ -81,7 +81,7 @@ The changes in this metric after the Thomas High School 9th grade scores were up
 
 ![image](https://user-images.githubusercontent.com/86032451/126630222-d7acff1e-33de-49cd-9e9c-f17519e91629.png)
 
-###Scores by School Size
+### Scores by School Size
 As with "Scores by School Spending", the changes that happened within these dataframes is only apparent when not formatted to a single decimal place:
 
 * Original dataframe:
@@ -93,7 +93,7 @@ As with "Scores by School Spending", the changes that happened within these data
 The dataframe when formatted to a single decimal place (same both before and after):
 ![image](https://user-images.githubusercontent.com/86032451/126633545-0eeb832a-3568-49aa-bf80-f8990abf594f.png)
 
-###Scores by School Type
+### Scores by School Type
 Finally, as with the previous two dataframes, the changes that happened within this one is only apparent when not formatted to a singeld decimal place:
 
 * Original dataframe:
@@ -105,7 +105,7 @@ Finally, as with the previous two dataframes, the changes that happened within t
 * The dataframe when formatted to a single decimal place (same both before and after):
 ![image](https://user-images.githubusercontent.com/86032451/126633737-6afe1c95-651b-44d4-b151-0eeac65b226c.png)
 
-##Summary
+## Summary
 In conclusion, updating the 9th grade scores for Thomas High School to "nan" affects the school district analysis in the following ways:
 * Within the school summary, Thomas High School average math and reading scores decreased slightly, with the % passing for math, reading, and overall decreasing drastically when the "nan" 9th grade scores were included in the calculation. After updating the percentages to only include 10-12 grades, however, they went back up, but were still slightly lower than what they were in the original analysis. This, in turn, caused those same metrics in the district summary to also decrease slightly.
 *  Since Thomas High School fell within the $630 - 644 spending bucket, the test scores metrics within that range ended up decreasing slightly, but was only apparent before formatting the outputs to a single decimal place. 
