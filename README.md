@@ -1,19 +1,19 @@
 # Analysis of School District Test Scores
 ## Overview
-The purpose of this analysis was to aggregate the standardized testing data of all the high schools a city school district in order to aid the school board in decisions about budget allocation. Various metrics were calculated and displayed to show data on overall school performance, as well as average scores by grade, school spending, size, and type. The original analysis later had to be adjusted when it came to light that the ninth grade reading and math test scores for Thomas High School were altered, and therefore had to be replaced with null ("NaN") values.
+The purpose of this analysis was to aggregate the standardized testing data of all the high schools a city school district to aid the school board in decisions about budget allocation. Various metrics were calculated and displayed to show data on overall school performance, as well as average scores by grade, school spending, size, and type. The original analysis later had to be adjusted when it came to light that the ninth grade reading and math test scores for Thomas High School were altered, and therefore had to be replaced with null ("nan") values.
 
 ## Results
 
 ### District Summary
-Below is a breakdown of how the district summary changed after the scores for ninth grade reading and math test scores for Thomas High School were replaced with "NaN" values:
+Below is a breakdown of how the district summary changed after the scores for ninth grade reading and math test scores for Thomas High School were replaced with "nan" values:
 
 * Average math score decreased from 79.0 to 78.9
-* Average reading score (when rounded only to the nearest 10th decimal place) appears unchanged (81.9); it's only after the code is displayed prior to reformatting the results that it becomes appearent the average score decreased from 81.87784 to 81.855796.
+* Average reading score (when rounded only to the nearest 10th decimal place) appears unchanged (81.9); it's only after the code is displayed prior to reformatting the results that it becomes apparent the average score decreased from 81.87784 to 81.855796.
 * Percentage of students that passed math decreased from 75.0% to 74.8%
 * Percentage of students that passed reading decreased from 85.8% to 85.7%.
 * Overall passing percentage decreased from 65.2% to 64.9%
 
-Below is the original district summary (reformatted to 1 decimal place in order to match the format on the challenge code):
+Below is the original district summary (reformatted to 1 decimal place to match the format on the challenge code):
 
 ![image](https://user-images.githubusercontent.com/86032451/126624764-cdbb8cc6-dc49-4baa-a867-7c2fca40eef6.png)
 
@@ -27,7 +27,7 @@ Below are the original and updated district summaries, respectively, prior to fo
 ![image](https://user-images.githubusercontent.com/86032451/126625047-8965d566-9cc6-4e9d-9813-aea412da47d9.png)
 
 ### School Summary
-Within the updated challenge code there are two school summaries - the first includes the 9th "NaN" test scores within the calculations for Thomas High School, and the second has them removed from just the passing percentages. Below is a breakdown of how this affected Thomas High School within the school summary:
+Within the updated challenge code there are two school summaries - the first includes the 9th "nan" test scores within the calculations for Thomas High School, and the second has them removed from just the passing percentages. Below is a breakdown of how this affected Thomas High School within the school summary:
 
 * Average math score was 83.418349 originally, and then 83.350937 in the updated analysis.
 * Average reading score was 83.848930 originally, and then 83.896082 in the updated analysis.
@@ -39,11 +39,11 @@ Original school summary for Thomas High School:
 
 ![image](https://user-images.githubusercontent.com/86032451/126626727-93f74234-fc7e-4486-a169-e92008cb9532.png)
 
-First updated school summary (includes 9th-grade "NaN" scores in % calculations):
+First updated school summary (includes 9th-grade "nan" scores in % calculations):
 
 ![image](https://user-images.githubusercontent.com/86032451/126626809-82d731c0-fd46-45d8-8cfa-7c47f12d8538.png)
 
-Second updated school summary (removes 9th-grade "NaN" scores in % calculations):
+Second updated school summary (removes 9th-grade "nan" scores in % calculations):
 
 ![image](https://user-images.githubusercontent.com/86032451/126626876-643cbf77-0338-4eb3-87a2-21988116bbb1.png)
 
@@ -98,7 +98,7 @@ The dataframe when formatted to a single decimal place (same both before and aft
 ![image](https://user-images.githubusercontent.com/86032451/126633545-0eeb832a-3568-49aa-bf80-f8990abf594f.png)
 
 ### Scores by School Type
-Finally, as with the previous two dataframes, the changes that happened within this one is only apparent when not formatted to a singeld decimal place:
+Finally, as with the previous two dataframes, the changes that happened within this one is only apparent when not formatted to a single decimal place:
 
 * Original dataframe:
 
@@ -117,11 +117,4 @@ In conclusion, updating the 9th grade scores for Thomas High School to "nan" aff
 * Within the school summary, Thomas High School average math and reading scores decreased slightly, with the % passing for math, reading, and overall decreasing drastically when the "nan" 9th grade scores were included in the calculation. After updating the percentages to only include 10-12 grades, however, they went back up, but were still slightly lower than what they were in the original analysis. This, in turn, caused those same metrics in the district summary to also decrease slightly.
 *  Since Thomas High School fell within the $630 - 644 spending bucket, the test scores metrics within that range ended up decreasing slightly, but was only apparent before formatting the outputs to a single decimal place. 
 *  Since Thomas High School fell within the Medium (1000-2000) bucket, the test scores metrics within that range ended up decreasing slightly, but was only apparent before formatting the outputs to a single decimal place. 
-*  Since Thomas High School is categorized as a Charter type, the test scores metrics within that type ended up decreasing slightly, but was only apparent before formatting the outputs to a single decimal place. 
-
-
-
-
-
-
-
+*  Since Thomas High School is categorized as a Charter type, the test scores metrics within that type ended up decreasing slightly, but was only apparent before formatting the outputs to a single decimal place.
