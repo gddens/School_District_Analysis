@@ -67,7 +67,7 @@ Second updated school summary (removes 9th-grade "NaN" scores in % calculations)
 
 ![image](https://user-images.githubusercontent.com/86032451/126629602-b062ac21-67a5-40f1-af55-c6d529755275.png) ![image](https://user-images.githubusercontent.com/86032451/126629647-0d4d3f3c-903c-4d67-b260-05005330dcbd.png)
 
-###Scores by School Spending
+### Scores by School Spending
 The changes in this metric after the Thomas High School 9th grade scores were updated is only apparent when viewing both the original and updated dataframe prior to formatting to a single decimal place. 
 
 * Original dataframe:
