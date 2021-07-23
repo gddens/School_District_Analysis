@@ -71,6 +71,7 @@ Second updated school summary (removes 9th-grade "NaN" scores in % calculations)
 The changes in this metric after the Thomas High School 9th grade scores were updated is only apparent when viewing both the original and updated dataframe prior to formatting to a single decimal place. 
 
 * Original dataframe:
+
 ![image](https://user-images.githubusercontent.com/86032451/126630022-8d92f074-4d68-4102-940f-2dc3c7f4bc99.png)
 
 * Updated dataframe - after replacing Thomas High School 9th grade scores with "nan", every single metric in the $630 - 644 bucket decreased slightly:
@@ -85,24 +86,30 @@ The changes in this metric after the Thomas High School 9th grade scores were up
 As with "Scores by School Spending", the changes that happened within these dataframes is only apparent when not formatted to a single decimal place:
 
 * Original dataframe:
+
 ![image](https://user-images.githubusercontent.com/86032451/126630416-a51b3f82-6b97-40d5-a1f7-d19a4a69ccb9.png)
 
 * Updated dataframe - after replacing Thomas High School 9th grade scores with "nan" every single metric in the Medium (1000-2000) metric decreased slightly:
+
 ![image](https://user-images.githubusercontent.com/86032451/126632581-adc7d6ce-0532-4a8a-b55c-69a59ccc204a.png)
 
 The dataframe when formatted to a single decimal place (same both before and after):
+
 ![image](https://user-images.githubusercontent.com/86032451/126633545-0eeb832a-3568-49aa-bf80-f8990abf594f.png)
 
 ### Scores by School Type
 Finally, as with the previous two dataframes, the changes that happened within this one is only apparent when not formatted to a singeld decimal place:
 
 * Original dataframe:
+
 ![image](https://user-images.githubusercontent.com/86032451/126633599-ef7c87d6-d43d-4cfe-8b58-3a7f3fdd3b7f.png)
 
 * Updated dataframe - after replacing Thomas High School 9th grade scores with "nan" every single metric in the "Charter" type decreased slightly:
+
 ![image](https://user-images.githubusercontent.com/86032451/126633657-cb99a547-db33-41ff-850d-92b90ad88c9f.png)
 
 * The dataframe when formatted to a single decimal place (same both before and after):
+
 ![image](https://user-images.githubusercontent.com/86032451/126633737-6afe1c95-651b-44d4-b151-0eeac65b226c.png)
 
 ## Summary
